@@ -3,56 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
     <title>Document</title>
 </head>
 <body>
-       <!-- В этот список добавляй элементы галереи -->
-       <ul class="gallery js-gallery"></ul>
+  <style>
+    .timer{
+      display: flex;
+      justify-content: center;
+    }
+    .field{
+      margin-right: 30px;
+      padding: 20px 40px;
+      border-radius: 5px;
+      background-color: black;
+    }
+    .value {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      color: white;
+    }
+    .label{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      color: white;
+    }
+  </style>
+      
 
-       <!--
-         Модальное окно для полноразмерного изображения
-         Для того чтобы открыть, необходимо добавить на div.lightbox CSS-класс is-open
-       -->
-       <div class="lightbox js-lightbox">
-         <div class="lightbox__overlay"></div>
-   
-         <div class="lightbox__content">
-           <img class="lightbox__image" src="" alt="" />
-         </div>
-   
-         <button
-           type="button"
-           class="lightbox__button"
-           data-action="close-lightbox"
-         ></button>
-       </div> 
-
-<!-- ------------------------------------------------------------------ -->
-
- <!-- <div id="controls">
-    <input class ="input "type="number" min="0" max="100" step="1" />
-    <button type="button" data-action="render">Создать</button>
-    <button type="button" data-action="destroy">Очистить</button>
+  <div class="timer" id="timer-1">
+    <div class="field">
+      <span class="value" data-value="days">11</span>
+      <span class="label">Days</span>
+    </div>
+  
+    <div class="field">
+      <span class="value" data-value="hours">11</span>
+      <span class="label">Hours</span>
+    </div>
+  
+    <div class="field">
+      <span class="value" data-value="mins">11</span>
+      <span class="label">Minutes</span>
+    </div>
+  
+    <div class="field">
+      <span class="value" data-value="secs">11</span>
+      <span class="label">Seconds</span>
+    </div>
   </div>
-  
-  <div id="boxes"></div> -->
 
 
-
-
-
-
-<!-- ------------------------------------------------------------------ -->
-
-
-
-    <script src="./js/task-1.js" type="module"></script> 
-    <script src="./js/gallery-items.js" type="module"></script>
-    <!-- <script src="./js/task-2.js" type="module"></script>  -->
-    <!-- <script src="./js/task-10.js" type="module"></script>  -->
-  
+ <script src="./js/task-1.js" type="module"></script> 
+   
 </body>
 </html>
 
